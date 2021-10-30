@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$screen-xl-min: 1200px;
+
+$screen-lg-min: 992px;
+
+$screen-md-min: 768px;
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin small($screenB) {
+  @media (max-height: $screenB+'px') {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+@mixin rwdB($screen, $screenBis) {
+  @media (max-width: $screen+'px') and (max-height: $screenBis + 'px') {
+    @content;
+  }
+}
+
+@mixin rwdd($screen) {
+  @media (min-height: $screen+'px') {
+    @content;
+  }
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+  font-family: 'Poppins-Regular';
+}
+.pagination > .active > a {
+  background-color: #6d9fb2;
+  border-color: #6d9fb2;
+  color: #fff;
+  font-family: 'Poppins-Regular';
+}
+.pagination > li > a {
+  border: 1px solid #6d9fb2;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Poppins-Regular';
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #6d9fb2;
+  border-color: #6d9fb2;
+  outline: none;
+  font-family: 'Poppins-Regular';
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #6d9fb2;
+  font-family: 'Poppins-Regular';
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+  font-family: 'Poppins-Regular';
+}
+
+.HomeTitle {
+  margin-top: 150px;
+  color: #636a28;
+  font-family: 'Poppins-Regular';
+
+  @include rwd(1500) {
+    margin-top: 250px;
+  }
+
+  @include rwd(1800) {
+    margin-top: 250px;
+  }
+
+  @include rwdd(850) {
+    margin-top: 250px;
+  }
+}
+
+.HomeLogo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+  @include rwd(1500) {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include rwdd(850) {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.UserB {
+  h2 {
+    color: #515151;
+    text-align: center;
+    margin-top: 50px;
+    border-width: 1px;
+    border-color: #515151;
+    border-style: solid;
+    font-family: 'Open Sans';
+  }
+}
+
+.Factures {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+  }
+  table {
+    color: white;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+
+  .factureTR {
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+  }
+  button {
+    padding: 10px;
+    font-family: 'Open Sans';
+  }
+  td {
+    border: 1px solid white;
+    font-size: 20px;
+    font-family: 'Open Sans';
+  }
+}
+
+.UserHome {
+  width: '100%';
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+  td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+  }
+  th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+}
+
+.ButtonModification {
+  font-family: 'Poppins-Regular';
+  margin-top: 0%;
+  @include rwd(1000) {
+    font-family: 'Poppins-Regular';
+    margin-top: 3%;
+  }
+
+  @include rwdd(1000) {
+    font-family: 'Poppins-Regular';
+    margin-top: 0%;
+  }
+}
+
+.FormNotification {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include rwd(1000) {
+    margin-top: 0%;
+  }
+
+  @include rwdd(1000) {
+    margin-top: 5%;
+  }
+}
+
+.buttonNotification {
+  font-family: 'Poppins-Regular';
+  margin-top: 2%;
+  width: 25%;
+  animation-name: animation;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: initial;
+  animation-direction: alternate;
+
+  @include rwd(1000) {
+    margin-top: 2%;
+    width: 35%;
+  }
+
+  @include rwdd(1000) {
+    margin-top: 2%;
+    width: 25%;
+  }
+}
+
+.BisArmes {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 15px;
+    text-align: center;
+  }
+  td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+  }
+  th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+}
+
+.BisMunitions {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 15px;
+    text-align: center;
+  }
+  td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+  }
+  th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+}
+
+.Ceder {
+  display: flex;
+  flex-direction: column;
+  table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+  }
+  td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2;
+  }
+  th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2;
+  }
+}
+
+.UserBB {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  table {
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+  }
+  th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+}
+
+.CederBis {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+  }
+  td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2;
+  }
+  th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2;
+  }
+}
+
+.AddUser {
+  width: 100vw;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  @include rwd(1500) {
+    margin-top: 50px;
+  }
+}
+
+.Modification {
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  font-family: 'Open Sans';
+  position: absolute;
+  justify-content: space-around;
+  margin-top: 0px;
+
+  @include rwd(1500) {
+    margin-top: 170px;
+  }
+
+  h1 {
+    font-family: 'Open Sans';
+    text-align: center;
+    color: #515151;
+    padding-bottom: 20px;
+  }
+
+  .ModificationB {
+    background-color: #636a28;
+    border: 1px solid #636a28;
+    font-family: 'Open Sans';
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  h3 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    text-align: center;
+  }
+  .ModificationBB {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-direction: column;
+    font-family: 'Open Sans';
+  }
+  .ModificationBis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans';
+  }
+  .ModificationBBis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Open Sans';
+  }
+  .ModificationBBBis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: 'Open Sans';
+  }
+  .autorisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  label {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans';
+  }
+  input {
+    background-color: white;
+    border: 0.4px solid #515151;
+    width: 10vw;
+    font-family: 'Open Sans';
+    color: #515151;
+    text-align: center;
+    border-radius: 5px;
+    height: 4vh;
+    margin-top: 10px;
+  }
+  ::placeholder {
+    font-family: 'Open Sans';
+    color: rgba($color: #515151, $alpha: 0.5);
+  }
+  .ModificationBY {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .ModificationBYY {
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .ModificationF {
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.Armes {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  table {
+    font-family: 'Open Sans';
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2;
+  }
+
+  th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2;
+  }
+}
+
+.Factures {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  table {
+    font-family: 'Open Sans';
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2;
+  }
+  th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2;
+  }
+}
+
+.Connexion {
+  margin-top: 150px;
+  background-color: white;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  @include rwd(1500) {
+    margin-top: 250px;
+  }
+
+  @include rwd(1800) {
+    margin-top: 250px;
+  }
+
+  @include rwdd(800) {
+    margin-top: 250px;
+  }
+
+  h1 {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 25px;
+  }
+
+  h2 {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 20px;
+  }
+
+  ::placeholder {
+    font-family: 'Open Sans';
+    color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  .LogB {
+    font-family: 'Open Sans';
+    margin-top: 30px;
+  }
+}
+
+.MailingForm {
+  margin-top: 10%;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include rwd(1000) {
+    margin-top: 0%;
+  }
+
+  @include rwdd(1000) {
+    margin-top: 5%;
+  }
+}
+
+.AddUserButton {
+  font-family: 'Poppins-Regular';
+  width: 15%;
+
+  @include rwd(1000) {
+    width: 20%;
+  }
+
+  @include rwdd(1000) {
+    width: 15%;
+  }
+}
+
+.buttonForm {
+  font-family: 'Poppins-Regular';
+  margin-top: 3%;
+  @include rwd(1000) {
+    width: 30%;
+  }
+
+  @include rwdd(1000) {
+    width: 20%;
+  }
+}
+
+.logoLogin {
+  z-index: 1000;
+  background-color: rgba(1, 1, 1, 1);
+  padding: 10;
+  border-radius: 15;
+  width: 40%;
+
+  box-shadow: 1px 1px 13px white;
+
+  @include rwdB(1280, 800) {
+    margin-top: 0px;
+    width: 30%;
+  }
+
+  @include small(800) {
+    margin-top: 0px;
+    width: 0%;
+  }
+
+  @include rwdB(1280, 800) {
+    margin-top: 0px;
+    width: 30%;
+  }
+}
+
+.LogoSidam {
+  z-index: 1000;
+  background-color: rgba(1, 1, 1, 1);
+  padding: 10;
+  width: 45%;
+  box-shadow: 1px 1px 13px white;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  @include small(800) {
+    margin-top: 0px;
+    width: 0%;
+  }
+
+  @include rwdB(1280, 800) {
+    margin-top: 0px;
+    width: 50%;
+    border-radius: 15;
+  }
+
+  @include rwdB(1280, 950) {
+    margin-top: 0px;
+    width: 70%;
+    border-radius: 15;
+  }
+}

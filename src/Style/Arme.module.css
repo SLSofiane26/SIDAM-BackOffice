@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+  font-family: 'Poppins-Regular'; }
+
+.pagination > .active > a {
+  background-color: #6d9fb2;
+  border-color: #6d9fb2;
+  color: #fff;
+  font-family: 'Poppins-Regular'; }
+
+.pagination > li > a {
+  border: 1px solid #6d9fb2;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Poppins-Regular'; }
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #6d9fb2;
+  border-color: #6d9fb2;
+  outline: none;
+  font-family: 'Poppins-Regular'; }
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #6d9fb2;
+  font-family: 'Poppins-Regular'; }
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+  font-family: 'Poppins-Regular'; }
+
+.HomeTitle {
+  margin-top: 150px;
+  color: #636a28;
+  font-family: 'Poppins-Regular'; }
+  @media (min-width: 1500px) {
+    .HomeTitle {
+      margin-top: 250px; } }
+  @media (min-width: 1800px) {
+    .HomeTitle {
+      margin-top: 250px; } }
+  @media (min-height: 850px) {
+    .HomeTitle {
+      margin-top: 250px; } }
+
+.HomeLogo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 1500px) {
+    .HomeLogo {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center; } }
+  @media (min-height: 850px) {
+    .HomeLogo {
+      margin-top: 250px;
+      display: flex;
+      justify-content: center; } }
+
+.UserB h2 {
+  color: #515151;
+  text-align: center;
+  margin-top: 50px;
+  border-width: 1px;
+  border-color: #515151;
+  border-style: solid;
+  font-family: 'Open Sans'; }
+
+.Factures {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .Factures h2 {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid; }
+  .Factures table {
+    color: white;
+    font-size: 20px; }
+  .Factures a {
+    text-decoration: none;
+    color: white;
+    padding: 5px; }
+  .Factures .factureTR {
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans'; }
+  .Factures button {
+    padding: 10px;
+    font-family: 'Open Sans'; }
+  .Factures td {
+    border: 1px solid white;
+    font-size: 20px;
+    font-family: 'Open Sans'; }
+
+.UserHome {
+  width: '100%';
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .UserHome table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 800; }
+  .UserHome td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300; }
+  .UserHome th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800; }
+
+.ButtonModification {
+  font-family: 'Poppins-Regular';
+  margin-top: 0%; }
+  @media (min-width: 1000px) {
+    .ButtonModification {
+      font-family: 'Poppins-Regular';
+      margin-top: 3%; } }
+  @media (min-height: 1000px) {
+    .ButtonModification {
+      font-family: 'Poppins-Regular';
+      margin-top: 0%; } }
+
+.FormNotification {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  @media (min-width: 1000px) {
+    .FormNotification {
+      margin-top: 0%; } }
+  @media (min-height: 1000px) {
+    .FormNotification {
+      margin-top: 5%; } }
+
+.buttonNotification {
+  font-family: 'Poppins-Regular';
+  margin-top: 2%;
+  width: 25%;
+  animation-name: animation;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: initial;
+  animation-direction: alternate; }
+  @media (min-width: 1000px) {
+    .buttonNotification {
+      margin-top: 2%;
+      width: 35%; } }
+  @media (min-height: 1000px) {
+    .buttonNotification {
+      margin-top: 2%;
+      width: 25%; } }
+
+.BisArmes {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .BisArmes table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 15px;
+    text-align: center; }
+  .BisArmes td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300; }
+  .BisArmes th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800; }
+
+.BisMunitions {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .BisMunitions table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 15px;
+    text-align: center; }
+  .BisMunitions td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300; }
+  .BisMunitions th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800; }
+
+.Ceder {
+  display: flex;
+  flex-direction: column; }
+  .Ceder table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 10px;
+    text-align: center; }
+  .Ceder td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2; }
+  .Ceder th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2; }
+
+.UserBB {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; }
+  .UserBB table {
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px; }
+  .UserBB td {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300; }
+  .UserBB th {
+    border: 1px solid #6d9fb2;
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800; }
+
+.CederBis {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .CederBis table {
+    margin-top: 30px;
+    color: #515151;
+    font-size: 10px;
+    text-align: center; }
+  .CederBis td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2; }
+  .CederBis th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2; }
+
+.AddUser {
+  width: 100vw;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; }
+  @media (min-width: 1500px) {
+    .AddUser {
+      margin-top: 50px; } }
+
+.Modification {
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  font-family: 'Open Sans';
+  position: absolute;
+  justify-content: space-around;
+  margin-top: 0px; }
+  @media (min-width: 1500px) {
+    .Modification {
+      margin-top: 170px; } }
+  .Modification h1 {
+    font-family: 'Open Sans';
+    text-align: center;
+    color: #515151;
+    padding-bottom: 20px; }
+  .Modification .ModificationB {
+    background-color: #636a28;
+    border: 1px solid #636a28;
+    font-family: 'Open Sans';
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  .Modification h3 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    text-align: center; }
+  .Modification .ModificationBB {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-direction: column;
+    font-family: 'Open Sans'; }
+  .Modification .ModificationBis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans'; }
+  .Modification .ModificationBBis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Open Sans'; }
+  .Modification .ModificationBBBis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: 'Open Sans'; }
+  .Modification .autorisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px; }
+  .Modification label {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans'; }
+  .Modification input {
+    background-color: white;
+    border: 0.4px solid #515151;
+    width: 10vw;
+    font-family: 'Open Sans';
+    color: #515151;
+    text-align: center;
+    border-radius: 5px;
+    height: 4vh;
+    margin-top: 10px; }
+  .Modification ::placeholder {
+    font-family: 'Open Sans';
+    color: rgba(81, 81, 81, 0.5); }
+  .Modification .ModificationBY {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px; }
+  .Modification .ModificationBYY {
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 50px; }
+  .Modification .ModificationF {
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+
+.Armes {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .Armes table {
+    font-family: 'Open Sans';
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px; }
+  .Armes td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2; }
+  .Armes th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2; }
+
+.Factures {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .Factures table {
+    font-family: 'Open Sans';
+    color: #515151;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px; }
+  .Factures td {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    border: 1px solid #6d9fb2; }
+  .Factures th {
+    color: #515151;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    border: 1px solid #6d9fb2; }
+
+.Connexion {
+  margin-top: 150px;
+  background-color: white;
+  font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center; }
+  @media (min-width: 1500px) {
+    .Connexion {
+      margin-top: 250px; } }
+  @media (min-width: 1800px) {
+    .Connexion {
+      margin-top: 250px; } }
+  @media (min-height: 800px) {
+    .Connexion {
+      margin-top: 250px; } }
+  .Connexion h1 {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 25px; }
+  .Connexion h2 {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 20px; }
+  .Connexion ::placeholder {
+    font-family: 'Open Sans';
+    color: rgba(0, 0, 0, 0.5); }
+  .Connexion .LogB {
+    font-family: 'Open Sans';
+    margin-top: 30px; }
+
+.MailingForm {
+  margin-top: 10%;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 1000px) {
+    .MailingForm {
+      margin-top: 0%; } }
+  @media (min-height: 1000px) {
+    .MailingForm {
+      margin-top: 5%; } }
+
+.AddUserButton {
+  font-family: 'Poppins-Regular';
+  width: 15%; }
+  @media (min-width: 1000px) {
+    .AddUserButton {
+      width: 20%; } }
+  @media (min-height: 1000px) {
+    .AddUserButton {
+      width: 15%; } }
+
+.buttonForm {
+  font-family: 'Poppins-Regular';
+  margin-top: 3%; }
+  @media (min-width: 1000px) {
+    .buttonForm {
+      width: 30%; } }
+  @media (min-height: 1000px) {
+    .buttonForm {
+      width: 20%; } }
+
+.logoLogin {
+  z-index: 1000;
+  background-color: #010101;
+  padding: 10;
+  border-radius: 15;
+  width: 40%;
+  box-shadow: 1px 1px 13px white; }
+  @media (max-width: 1280px) and (max-height: 800px) {
+    .logoLogin {
+      margin-top: 0px;
+      width: 30%; } }
+  @media (max-height: 800px) {
+    .logoLogin {
+      margin-top: 0px;
+      width: 0%; } }
+  @media (max-width: 1280px) and (max-height: 800px) {
+    .logoLogin {
+      margin-top: 0px;
+      width: 30%; } }
+
+.LogoSidam {
+  z-index: 1000;
+  background-color: #010101;
+  padding: 10;
+  width: 45%;
+  box-shadow: 1px 1px 13px white;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  @media (max-height: 800px) {
+    .LogoSidam {
+      margin-top: 0px;
+      width: 0%; } }
+  @media (max-width: 1280px) and (max-height: 800px) {
+    .LogoSidam {
+      margin-top: 0px;
+      width: 50%;
+      border-radius: 15; } }
+  @media (max-width: 1280px) and (max-height: 950px) {
+    .LogoSidam {
+      margin-top: 0px;
+      width: 70%;
+      border-radius: 15; } }
+
+/*# sourceMappingURL=Arme.module.css.map */
